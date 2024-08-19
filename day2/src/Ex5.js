@@ -2,19 +2,15 @@ import react, { useState } from 'react'
 
 const Ex5 = () => {
   const [data, setData] = useState(1)
-  const [value, setValue] = useState(0)
-  const myFun = (e) => {
+  const [value, setValue] = useState(1)
+  const myFun = () => {
     setData(data * 2)
-    if (e.target.innerHTML === 'multBy2') {
-      setValue(2)
-    }
+    setValue(2)
   }
 
-  const myFun_2 = (e) => {
+  const myFun_2 = () => {
     setData(data * 4)
-    if (e.target.innerHTML === 'multBy4') {
-      setValue(4)
-    }
+    setValue(4)
   }
 
   return (
