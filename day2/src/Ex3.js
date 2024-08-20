@@ -20,6 +20,8 @@ function Ex3(){
 
     // useEffect{} hook will execute after return statement executes
 
+    //onChange{} 
+
 
     
 
@@ -35,7 +37,7 @@ function Ex3(){
         <p>value of a::: {a}</p>
         <button onClick={myFun_3}>click_+</button>
         {/* <button onClick={()=>setA(a+1)}>click</button> */}
-        {/* <button onClick={()=>setA(a-1)}>click_-</button> */}
+        <button onClick={()=>setA(a-1)}>click_-</button>
 
             </>
        

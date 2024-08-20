@@ -6,13 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import Ex3 from './Ex3';
 import Ex4 from './Ex4';
 import Ex5 from './Ex5';
+import Assignment from './Assignment'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Ex3/> */}
     {/* <Ex4/> */}
-    <Ex5/>
+    {/* <Ex5/> */}
+    <Assignment/>
   </React.StrictMode>
 );
 
