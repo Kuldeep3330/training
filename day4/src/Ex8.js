@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+//map function in React
+//if we want to iterate array of value and print in individual component we use map function
+// Array.map((value, index)=><li>{value}</li>)
+
  class Ex8 extends Component {
     constructor(props)
     {
