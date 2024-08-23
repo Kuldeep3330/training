@@ -5,12 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Ex9 from './Ex9';
 import Ex8 from './Ex8';
+import Ex11 from './Ex11';
+import Ex12 from './Ex12';
+import Gfgok from './Gfgok';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Ex8/>
+    {/* <Ex8/> */}
+    {/* <Ex11/> */}
+    {/* <Ex12/> */}
+    <Gfgok/>
   </React.StrictMode>
 );
 

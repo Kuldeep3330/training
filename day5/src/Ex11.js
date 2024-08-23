@@ -1,49 +1,38 @@
 import react, { useState } from 'react'
 import {useFormik} from 'formik'
+import * as Yup from 'yup'
 
-const Ex8 = () => {
-//   const [data, setData] = useState({
-//     username: '',
-//     password: '',
-//     firstname: '',
-//   })
+const validationSchema=Yup.object({
+    username:Yup.string().min(5,'must be more than 5 characters').required("username is required"),
+    password:Yup.string().required("Password required"),
+    pin:Yup.string().matches(/^[0-9]+$/,"Must be only Numbers").min(6,"Must be exactly 6"),
+})
+const Ex11 = () => {
 
-//   const { username, password, firstname } = data
-
-//   const myFun = (e) => {
-//     setData({ ...data, [e.target.name]: e.target.value })
-//  }
-
-//   const myFun_3 = (e) => {
-//     e.preventDefault()
-//     // validation
-//     if (username.length <= 5) {
-//       alert('length can not be less than 5')
-//     } else if (password.length == 0) {
-//       alert('passwprd must be there')
-//     } else console.log(data)
-//   }
 
 const formik= useFormik({
     initialValues:{
         username:'',
         password:'',
+        pin:'',
     },
     onSubmit:(values)=>{
         console.log("Form values",formik.values);
     },
-    validate:(values)=>{
-        let errors={};
-        if(!values.username)
-        {
-            errors.username="User name is required"
-        }
-        if(!values.password)
-        {
-            errors.password="password is required"
-        }
-        return errors;
-    }
+    // validate:(values)=>{
+    //     let errors={};
+    //     if(!values.username)
+    //     {
+    //         errors.username="User name is required"
+    //     }
+    //     if(!values.password)
+    //     {
+    //         errors.password="password is required"
+    //     }
+    //     return errors;
+    // }
+
+    validationSchema
 })
 
 
@@ -63,6 +52,18 @@ const formik= useFormik({
               onChange={formik.handleChange}
             />
             {formik.errors.username}
+          </div>
+          <div className="mt-3">
+            <label>pin</label>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="pin"
+              value={formik.values.pin}
+              name="pin"
+              onChange={formik.handleChange}
+            />
+            {formik.errors.pin}
           </div>
 
           <div className="mt-3">
@@ -90,4 +91,4 @@ const formik= useFormik({
   )
 }
 
-export default Ex8
+export default Ex11
