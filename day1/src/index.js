@@ -8,11 +8,16 @@ import Ex2 from './Ex2';
 import Ex from './Ex';
 import Ex1 from './Ex1';
 import Header from './Components/Header';
+import Chai1 from './Chai1';
+import Chai2 from './Chai2'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <Ex/>
+    {/* <Ex/> */}
+    {/* <App/> */}
+   {/* <Chai1/> */}
+   <Chai2/>
    
   </React.StrictMode>
 );

@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Chai from './Chai';
 
 function App() {
   return (
     <div className="App">
-      <h1>hi this is my react app</h1>
+      <h1>this is my chai app</h1>
+      <Chai/>
     </div>
   );
 }

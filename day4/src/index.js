@@ -14,7 +14,8 @@ root.render(
     {/* <App /> */}
     {/* <Ex8/> */}
     {/* <Ex5/> */}
-    <Ex6/>
+    <Ex9/>
+    {/* <Ex6/> */}
   </React.StrictMode>
 );
 

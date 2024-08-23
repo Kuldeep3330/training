@@ -8,6 +8,7 @@ import Ex4 from './Ex4';
 import Controlled from './Controlled';
 import Uncontrolled from './Uncontrolled';
 import Assignment from './Assignment';
+import Background from './Background';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +17,8 @@ root.render(
     {/* <Ex4/> */}
     {/* <Controlled/> */}
     {/* <Uncontrolled/> */}
-    <Assignment/>
+    {/* <Assignment/> */}
+    <Background/>
 
   </React.StrictMode>
 );
