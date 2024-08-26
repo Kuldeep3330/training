@@ -8,15 +8,17 @@ import Ex8 from './Ex8';
 import Ex11 from './Ex11';
 import Ex12 from './Ex12';
 import Gfgok from './Gfgok';
+import Ex1 from './Axios/Ex1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
+    <Ex1/>
     {/* <Ex8/> */}
     {/* <Ex11/> */}
     {/* <Ex12/> */}
-    <Gfgok/>
+    {/* <Gfgok/> */}
   </React.StrictMode>
 );
 

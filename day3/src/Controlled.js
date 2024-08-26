@@ -2,8 +2,9 @@ import React, {useState} from 'react'
 import Test from './Test';
 
 
-// controlled Component:- 
-// uncontrolled Component:-Elements data is controlled by dom itself, and here not using any call back fn or event like onChange
+// controlled Component:- when element data is controlled by parent component
+// uncontrolled Component:-Elements data is controlled by dom itself, and here not using any callback fn or 
+//event like onChange
 
 const Controlled=()=>{
     const [name, setName]=useState("");

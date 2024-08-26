@@ -6,10 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 import Ex2 from './Ex2';
 import Ex from './Ex';
-import Ex1 from './Ex1';
+import Ex1 from './sumit/Ex1';
 import Header from './Components/Header';
 import Chai1 from './Chai1';
 import Chai2 from './Chai2'
+import Controlled from '../../day2/src/Sirish/Controlled';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -17,7 +18,9 @@ root.render(
     {/* <Ex/> */}
     {/* <App/> */}
    {/* <Chai1/> */}
-   <Chai2/>
+   {/* <Chai2/> */}
+   {/* <Ex1/> */}
+   <Controlled/>
    
   </React.StrictMode>
 );

@@ -6,6 +6,9 @@ const Hoc = (Component) => {
         state={
             auth:true
         }
+        myfun=()=>{
+            
+        }
         render(){
             return(
                 <div>
