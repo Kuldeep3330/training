@@ -9,12 +9,14 @@ import Ex11 from './Ex11';
 import Ex12 from './Ex12';
 import Gfgok from './Gfgok';
 import Ex1 from './Axios/Ex1';
+import Myform from './Practise/Myform';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Ex1/>
+    {/* <Ex1/> */}
+    <Myform/>
     {/* <Ex8/> */}
     {/* <Ex11/> */}
     {/* <Ex12/> */}

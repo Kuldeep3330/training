@@ -1,3 +1,19 @@
+//Formik
+//It is a library we can able to handle the forms using this library
+//it is small library that helps you deal with forms in react
+
+//managing the form
+//form submission
+//form validation
+//what is the main  usage of Formik
+    // using a formik we can able to create scalable form 
+    // at the same time the form which we create it will be more flexible
+    // at the same time we will be able to create forms very fast
+// Without Formik we were writting separate-separate code for each event but when we are using Formik there
+    // is no need to write separate code for event because this is internally configured in Formik
+//npm i formik
+
+
 // Yup 
 // is a javascript library
 // it is used to build objects schemas for your form Data
